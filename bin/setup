@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Set up the app. Run this script immediately after cloning the codebase.
+
+# Exit if any subcommand fails
+set -e
+
+# Set up Ruby dependencies via Bundler
+gem install bundler --conservative
+bundle check || bundle install
+
+# Set up database
+bin/rake db:setup
+
+# Add binstubs to PATH via export PATH=".git/safe/../../bin:$PATH" in ~/.zshenv
+mkdir -p .git/safe
+
+# Only if this isn't CI
+# if [ -z "$CI" ]; then
+# fi

@@ -1,0 +1,10 @@
+!.keep
+*.DS_Store
+*.swo
+*.swp
+/.bundle
+/.env.local
+/db/*.sqlite3
+/log/*
+/tmp/*
+.env
