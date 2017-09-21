@@ -1,1 +1,1 @@
-web: rackup config.ru -p $PORT
+web: rackup -s puma -p $PORT
