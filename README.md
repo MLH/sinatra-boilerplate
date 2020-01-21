@@ -37,6 +37,10 @@ This boilerplate has the following dependencies:
 Changelog
 ---------
 
+### 1.2.0 (January 21, 2020)
+
+Updated Ruby to 2.6.5 and gems to latest versions.
+
 ### 1.0.0 (September 14, 2017)
 Hello world! This is the first commit to this repository.  Starting out, the
 boilerplate includes the following gems:
